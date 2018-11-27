@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E19BDCA-6C69-4D96-BC74-93EB2D42AA1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LIBRARY_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>LIBRARY MANAGEMENT SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN_HOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN_HOME.Designer.cs">
+      <DependentUpon>ADMIN_HOME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BOOKS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOOKS.Designer.cs">
+      <DependentUpon>BOOKS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deleteBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteBooks.Designer.cs">
+      <DependentUpon>deleteBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMAILSEND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMAILSEND.Designer.cs">
+      <DependentUpon>EMAILSEND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueBooks.Designer.cs">
+      <DependentUpon>issueBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_PAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_PAGE.Designer.cs">
+      <DependentUpon>LOGIN_PAGE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS.Designer.cs">
+      <DependentUpon>REPORTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnBook.Designer.cs">
+      <DependentUpon>returnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sentMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sentMail.Designer.cs">
+      <DependentUpon>sentMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokes.Designer.cs">
+      <DependentUpon>stokes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="store_data.cs" />
+    <Compile Include="studentHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentHome.Designer.cs">
+      <DependentUpon>studentHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="students.Designer.cs">
+      <DependentUpon>students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateBooks.Designer.cs">
+      <DependentUpon>updateBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBooks.Designer.cs">
+      <DependentUpon>viewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewStudents.Designer.cs">
+      <DependentUpon>viewStudents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMIN_HOME.resx">
+      <DependentUpon>ADMIN_HOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BOOKS.resx">
+      <DependentUpon>BOOKS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteBooks.resx">
+      <DependentUpon>deleteBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMAILSEND.resx">
+      <DependentUpon>EMAILSEND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueBooks.resx">
+      <DependentUpon>issueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_PAGE.resx">
+      <DependentUpon>LOGIN_PAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="REPORTS.resx">
+      <DependentUpon>REPORTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnBook.resx">
+      <DependentUpon>returnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sentMail.resx">
+      <DependentUpon>sentMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokes.resx">
+      <DependentUpon>stokes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentHome.resx">
+      <DependentUpon>studentHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="students.resx">
+      <DependentUpon>students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateBooks.resx">
+      <DependentUpon>updateBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBooks.resx">
+      <DependentUpon>viewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewStudents.resx">
+      <DependentUpon>viewStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOME2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
